@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadaival Singh - Portfolio</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Sadaival Singh</h1>
+            <p>Projects</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="art.html">Art</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="robotics">
+        <h2 data-aos="fade-up">Robotics</h2>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">ROS</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/robotics_image.gif" alt="Robotics Project">
+                <p data-aos="fade-up">
+                    This project include simulation of kortex robot (7 DOF) in Gazebo. The communication between various nodes is done through ROS (Robot Operating System). Codes are written for inverse kinematic and inverse dynamic controlers. The controller reads target end-effector positions and orientations. It makes a cubic-polynomial trajectory connecting these points and thereby does inverse kinematic calculation to output joint rotations for achieving the target pose.<!-- ... Repeat this paragraph to reach around 1000 words ... -->
+                </p>
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">Automatic gear Shifters</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/gear_shifters.gif" alt="Mechanical Engineering Project">
+                <p data-aos="fade-up">
+                    This project was implemented on Efficycle (tadpole configuration hybrid vehicle). Efficycle is powered by two people manually and also a DC Motor. Bot these manual and electric powers are added to power the vehicle on a single shaft. As the torques/speed delivered by the motor and human effort are different, seperate gear ratio is required for both of them. The gear ratio of both the motor and human effort shaft needs to be changed according to current speed. An Arduino MEGA was used as a controller, to implement speed calculation, gear control and display unit. The speed is calculated using a hall effect sensor, which calculates the time difference between two magnetic impulses recieved through magnets on the rim of back wheel. Through this speed input the arduino defines the effecient gear ratio and signals two servo motors to individually push derailleurs of gears placed on human effort and motor shafts. A seprate joystick module is also provided to control gears manually if needed. The current gear positions and speed is displayed on the display unit fitted on efficyle. This project was presented in SAE Efficycle 2018 held in Jalandhar and recieved the 'Best Innovation Award'. More details can be seen on the Github <a href="https://github.com/Sadaival/Automatic-Electronic-Gear-Shifters" target="_blank">link</a>. <!-- ... Repeat this paragraph to reach around 1000 words ... -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Additional Section -->
+    <section id="Automobile" data-aos="fade-up">
+        <h2 data-aos="fade-up">Automobile</h2>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">Formula Student</h3>
+            <div class="project-content" data-aos="fade-up">
+                <p data-aos="fade-up">
+                    Formula Student is a global competition fro engineering students to design racecars according to engineering specification provided. Our team participated in Formula Bharat 2020, and successfully designed and manufactured the vehicle. For this project I did the vehicle dynamics calculations for determining the initial parameters of the car and paticularly suspension subsystem. From this an iterative design process was used while incorporating all other subsystems with the suspension. Static and dynamic simulations, kinematic analysis was performed multiple times on suspension components. The suspension was manufactured to precision according to the final design and tested. As team captain I also worked in other subsystem design (steering, intake/exhaust, drivetrin, electronics, brake) and have a complete understanding of designing a formula student racecar.
+                </p>  
+            </div>
+            <div class="image-container">
+                <img src="img/mechanical_engineering_image.jpeg" alt="Image 1" class="wide">
+                <img src="img/suspension.gif" alt="Image 2">
+                <img src="img/bell_crank.png" alt="Image 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="Vision" data-aos="fade-up">
+        <h2 data-aos="fade-up">Computer Vision</h2>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">Melt pool monitoring</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/computer_vision_image.gif" alt="Computer Vision Project">
+                <p data-aos="fade-up">
+                    Exploring the realm of computer vision, this project was catered for capturing the molten pool during weld deposition in metal additive manufacturing. Specialised cameras were procured, and an experimental setup was designed for collection of data. effecientnet model was trained for capturing the melt pool size to be used for control of input weld parameters.
+                </p>
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">3D Scanning</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/3d_Scan.png" alt="Mechanical Engineering Project" class="wide">
+                <p data-aos="fade-up">
+                    A low cost 3D Scanner using line laser was implemented in this project. Codes are written for camera callibration, data capturing, 3D tranformation and  point cloud generation.
+                </p>
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">Hand gesture recognition</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/gesture.gif" alt="Mechanical Engineering Project">
+                <p data-aos="fade-up">
+                    This is a basic hand gesture recognition project. It detects gestures based on geometry and orientation of the hand. More details can be found on the github <a href="https://github.com/Sadaival/Hand-Gestures" target="_blank">link</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="3D printing" data-aos="fade-up">
+        <h2 data-aos="fade-up">Additive Manufacturing</h2>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">Toolpath generation</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/tst.gif" alt="am project">
+                <p data-aos="fade-up">
+                    Traveling Salesman problem is an NP-hard optimisation problem in mathematics. But heurestic algorithms exists for solving it. Simialr heurestic algorithm of Lin-Kernighan was used to generate toolpath for use in additve manufacturing. The toolpath is of non-retractive nature and therefore has various benefits for WAAM (Wire arc additive manufacturing). A complete toolpath generation software was also made for this toolpath. the software took input of geometries and output G-codes for 3D printer. A part of this research work is published and further work on density based toolpath is in progress.
+                </p>
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up">
+            <h3 data-aos="fade-up">Powder simulation</h3>
+            <div class="project-content" data-aos="fade-up">
+                <img src="img/powder.gif" alt="am Project">
+                <p data-aos="fade-up">
+                    Powder bed deopsition is a critical step for Powbed bed fusion based additive manufacturing. Current method of using Doctor blade for recoater puts additonal stress on already deposited layers. A non-contact deposition method is desirable and therefore this project focussed on simulating a vibration based non-contact powder recoating system. Discrete elemnent method simulations were performed at various vibration frequency and recoater geometries to determine the optimal parameters.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up">
+        &copy; 2023 Sadaival Singh - Portfolio
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                once: true, // Ensures AOS animations are only played once
+                startEvent: 'load', // Wait for images to load before applying animations
+                offset: 100, // Adjust this offset value as needed
+            });
+        });
+    </script>
+
+</body>
+
+</html>

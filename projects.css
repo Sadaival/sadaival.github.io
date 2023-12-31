@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #395bca70; /* Light background color for the body */
+}
+
+
+header {
+    background-image: url('img/background_img.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    padding: 2% 0;
+}
+
+.header-content {
+    background-color: white; /* Added white background */
+    padding: 1% 6%; /* Adjust padding as needed */
+    border-radius: 30px; /* Added rounded corners */
+    display: inline-block; /* Make the white box fit the content width */
+    border: 2px solid black;
+}
+
+
+nav {
+    background-color: #1a1a1a; /* Dark background color for the menu */
+    color: #fff;
+    text-align: center;
+    padding: 1%; /* Reduced thickness of the menu */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff; /* Change the color to white */
+    text-decoration: none;
+    margin: 0 2%;
+    padding: 1%;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+
+
+section {
+    padding: 4%;
+    margin: 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #333;
+    box-shadow: 0 2px 0 #333; /* Adjust the color and size of the shadow */
+}
+
+h1 {
+    color: #333;
+}
+
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox for project content */
+section .project .project-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Add margin between image and description */
+section .project img {
+    max-width: 22%; /* Adjust the maximum width as needed */
+    width: 100%;
+    margin-right: 20px; /* Add a gap between image and text on desktop */
+    margin-left: 20px; /* Add a gap between image and text on desktop */
+}
+
+/* Adjust text alignment and positioning */
+section .project p {
+    text-align: justify;
+    flex: 1; /* Allow text to take remaining width */
+}
+
+/* Alternate left and right alignment for projects */
+section .project:nth-child(even) .project-content {
+    flex-direction: row-reverse;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    section .project .project-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start vertically on smaller screens */
+    }
+
+    section .project img {
+        margin-right: 2%; /* Adjust margin for better alignment on smaller screens */
+        margin-left: 2%; /* Adjust margin for better alignment on smaller screens */
+        shape-outside: none; /* Disable shape outside on smaller screens */
+        max-width: 100%; /* Make the image full width on smaller screens */
+    }
+
+    /* Fix for alternating images in mobile */
+    section .project:nth-child(even) .project-content {
+        flex-direction: column; /* Stack content vertically for even projects on smaller screens */
+        text-align: justify; /* Justify text in mobile view */
+    }
+}
+
+/* Add this to your existing CSS or modify it accordingly */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Additional style for wider images */
+.image-container img.wide {
+    max-width: 35%; /* Adjust the width for wider images */
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .image-container img.wide {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        max-width: 100%;
+    }
+
+    /* Remove margin between images in mobile view */
+    .image-container img {
+        margin-bottom: 0;
+    }
+}
+
+/* Fade-in animation for elements */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
