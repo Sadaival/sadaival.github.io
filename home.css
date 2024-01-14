@@ -55,7 +55,10 @@ nav a:hover {
     background-color: #333;
 }
 
-
+.active {
+    background-color: #333; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+}
 section {
     padding: 4%;
     margin: 2%;
