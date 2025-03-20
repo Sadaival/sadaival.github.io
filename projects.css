@@ -2,7 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #395bca70; /* Light background color for the body */
+    /*background-color: #395bca70; /* Light background color for the body */
+    background-color: #fff
 }
 
 
