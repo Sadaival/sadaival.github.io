@@ -448,7 +448,7 @@ footer {
     }
     
     .profile-image {
-        max-width: 280px; /* Slightly smaller on mobile */
+        max-width: 200px; /* Much smaller on mobile */
     }
     
     .image-container {
