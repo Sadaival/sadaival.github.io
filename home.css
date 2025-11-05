@@ -445,11 +445,11 @@ footer {
     .profile-image-wrapper {
         width: 100%;
         margin-bottom: 20px;
-        padding: 5px;
+        padding: 10px;
     }
     
     .profile-image {
-        max-width: 150px; /* Even smaller on mobile */
+        max-width: 250px; /* Larger size on mobile */
         width: 100%;
     }
     
