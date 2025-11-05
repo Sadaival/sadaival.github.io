@@ -97,6 +97,7 @@ p {
 
 #home {
     padding: 3% 4%;
+    overflow: hidden;
 }
 
 .profile-image-wrapper {
@@ -444,11 +445,12 @@ footer {
     .profile-image-wrapper {
         width: 100%;
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 5px;
     }
     
     .profile-image {
-        max-width: 200px; /* Much smaller on mobile */
+        max-width: 150px; /* Even smaller on mobile */
+        width: 100%;
     }
     
     .image-container {
@@ -501,7 +503,11 @@ footer {
     }
     
     #home {
-        padding: 5%;
+        padding: 4%;
+    }
+    
+    #home .image-container {
+        padding: 0;
     }
     
     h2 {
