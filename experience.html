@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGECDKP67V"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BGECDKP67V');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadaival Singh - Experience</title>
+    <link rel="stylesheet" href="projects.css">
+    <style>
+        /* Experience page specific styles */
+        #experience {
+            background-color: #fafafa;
+        }
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .experience-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #1a1a1a;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .experience-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .experience-role {
+            color: #1a1a1a;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 0;
+        }
+        .experience-meta {
+            color: #666;
+            font-size: 0.95em;
+            margin: 0;
+        }
+        .experience-points {
+            color: #444;
+            margin: 10px 0 0 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .experience-item {
+                padding: 20px;
+            }
+            .experience-role {
+                font-size: 1.05em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Sadaival Singh</h1>
+            <p>Experience</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="art.html">Art</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-list">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-role">Research Associate — Polytechnique Montréal</h3>
+                    <p class="experience-meta">June 2025 – Dec 2025</p>
+                </div>
+                <ul class="experience-points">
+                    <li>Working with team on novel elastic registration algorithm to accelerate CT image acquisition, reconstruction, and segmentation.</li>
+                    <li>Built a Python-based UI for the Elastic Registration backend API.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-role">Research Intern — Comet Group (Dragonfly Division)</h3>
+                    <p class="experience-meta">May 2024 – Apr 2025</p>
+                </div>
+                <ul class="experience-points">
+                    <li>Improved deep learning model accuracy for industrial vision applications and quantified measurement repeatability.</li>
+                    <li>Automated code understanding and documentation using LLMs to generate call graphs, type hints, and docstrings for a RAG pipeline.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-role">Teaching Assistant — McGill University</h3>
+                    <p class="experience-meta">Jan 2024 – Apr 2024</p>
+                </div>
+                <ul class="experience-points">
+                    <li>Assisted labs and grading for MECH 383: Applied Electronics and Instrumentation.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-role">R&amp;D Engineer — Ace Manufacturing Systems</h3>
+                    <p class="experience-meta">Nov 2022 – Jun 2023</p>
+                </div>
+                <ul class="experience-points">
+                    <li>Designed vision-based control systems for WAAM and PBF additive manufacturing.</li>
+                    <li>Built a low-cost 3D scanner for part inspection using line-laser triangulation.</li>
+                    <li>Developed a vision-driven tool measurement and breakage detection system in Python.</li>
+                    <li>Optimized mechanisms using constraint-based analysis and optimization tools for WAAM machine.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-role">Assistant Manager / GTE / Intern — Bajaj Auto Ltd.</h3>
+                    <p class="experience-meta">Jun 2020 – Oct 2022</p>
+                </div>
+                <ul class="experience-points">
+                    <li>Assisted in component development for engine castings, improving process efficiency and cost.</li>
+                    <li>Supervise for designing of tools, fixtures, and manufacturing processes to meet quality and production targets.</li>
+                    <li>Optimized paint shop equipment layout and machinery calculations; reduced packaging costs via stress-based pallet redesign.</li>
+                    <li>Analyzed wall thickness in blow-molded and rotomolded fuel tanks; designed universal handling fixtures.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Sadaival Singh - Portfolio
+    </footer>
+
+</body>
+
+</html>
+
